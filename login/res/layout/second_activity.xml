@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.login.TitleLayout
+        android:id="@+id/titleLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.example.login.TitleLayout>
+
+
+<ListView
+        android:id="@+id/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PL_name" />
+
+<Button
+    android:id="@+id/c_db"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/titleLayout1"
+    android:layout_marginTop="36dp"
+    android:text="创建数据库"
+    android:textColor="#12a2fe"
+    android:textSize="20sp" />
+
+<EditText
+    android:id="@+id/editText_de"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/PL_name"
+    android:layout_toRightOf="@+id/button_de"
+    android:hint="输入你要删除的用户名"
+    android:textSize="15sp" 
+    android:layout_marginLeft="20px"
+    android:layout_marginRight="20px">
+    <requestFocus />
+</EditText>
+
+<TextView
+    android:id="@+id/PL_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/list_view"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="16dp"
+    android:text="头像"
+    android:textColor="#000000"
+    android:textSize="15sp" />
+
+<TextView
+    android:id="@+id/PL_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/c_db"
+    android:layout_below="@+id/c_db"
+    android:text="姓名"
+    android:textColor="#000000"
+    android:textSize="15sp" />
+
+<Button
+    android:id="@+id/button_de"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/editText_de"
+    android:layout_toRightOf="@+id/c_db"
+    android:text="删除用户"
+    android:textColor="#12a2fe" />
+
+</RelativeLayout>
